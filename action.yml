@@ -1,0 +1,35 @@
+name: "Docker Images Build And Push"
+description: "GitHub Action For Docker Hub Image Build And Push"
+branding:
+  icon: "package"
+  color: "green"
+inputs:
+  registry_url:
+    description: "Docker Registry Url, eg: registry.xxxxx.cs.com"
+    required: true
+  namespaces:
+    description: "Docker Image Namespaces, eg: adotcode"
+    required: true
+  repository_name:
+    description: "Docker Image Repository Name, eg: adc.ms.eureka"
+    required: true
+  user_name:
+    description: "Docker Login UserName, from: https://ccr.ccs.tencentyun.com/"
+    required: true
+  password:
+    description: "Docker Login Password, from: https://ccr.ccs.tencentyun.com/"
+    required: true
+  image_version:
+    description: "Image Build Version, Default Image Version (latest)"
+    required: false,
+    default: "latest"
+  docker_file:
+    description: "Docker File Directory, Default Current Directory (.)"
+    required: false
+    default: "."
+outputs:
+  image_pull_url:
+    description: "Image Pull Url,eg: docker pull image_pull_url"
+runs:
+  using: "docker"
+  image: "Dockerfile"
