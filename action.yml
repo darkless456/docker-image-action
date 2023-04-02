@@ -1,5 +1,5 @@
 name: "Docker Action: Image Build And Push"
-description: "GitHub Action For Docker Image Build And Push (Tencent Cloud)"
+description: "GitHub Action For Docker Image Build And Push"
 branding:
   icon: "package"
   color: "green"
@@ -8,16 +8,16 @@ inputs:
     description: "Docker Registry Url, eg: registry.xxxxx.cs.com"
     required: true
   namespace:
-    description: "Docker Image Namespace, eg: adotcode"
+    description: "Docker Image Namespace"
     required: true
   repository_name:
-    description: "Docker Image Repository Name, eg: adc.ms.eureka"
+    description: "Docker Image Repository Name"
     required: true
   user_name:
-    description: "Docker Login UserName, from: https://ccr.ccs.tencentyun.com/"
+    description: "Docker Login UserName"
     required: true
   password:
-    description: "Docker Login Password, from: https://ccr.ccs.tencentyun.com/"
+    description: "Docker Login Password"
     required: true
   image_version:
     description: "Image Build Version, Default Image Version (latest)"

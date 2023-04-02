@@ -12,4 +12,4 @@ docker tag ${image_name} ${image_url}
 docker push ${image_url}
 
 #output
-echo "::set-output name=image_pull_url::${image_url}"
+# echo "::set-output name=image_pull_url::${image_url}"
