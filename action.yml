@@ -1,5 +1,5 @@
-name: "Docker Images Build And Push"
-description: "GitHub Action For Docker Hub Image Build And Push"
+name: "Docker Action: Image Build And Push"
+description: "GitHub Action For Docker Image Build And Push (Tencent Cloud)"
 branding:
   icon: "package"
   color: "green"
@@ -7,8 +7,8 @@ inputs:
   registry_url:
     description: "Docker Registry Url, eg: registry.xxxxx.cs.com"
     required: true
-  namespaces:
-    description: "Docker Image Namespaces, eg: adotcode"
+  namespace:
+    description: "Docker Image Namespace, eg: adotcode"
     required: true
   repository_name:
     description: "Docker Image Repository Name, eg: adc.ms.eureka"
